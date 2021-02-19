@@ -1,0 +1,55 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar ng-show="$root.headerExists" id="navbar-right-top" class="page-title bar-dark">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+			</ion-nav-buttons>
+			<ion-nav-buttons side="right">
+				<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="fabButtonUp"></ion-nav-view>
+		<ion-nav-view animation="none" name="findtutors-side_menus"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left">
+		<ion-header-bar class="text-center expanded dark-bg">
+			<img ng-src="{{ appLogo | trustUrl }}" class="avatar motion spin fade" />
+			<div class="menu-bottom"><span ng-bind-html="appName | strHTML"></span><br/></div>
+		</ion-header-bar>
+		<ion-content class="has-expanded-header royal-900-bg stable">
+			<ion-list class="list" >
+				<ion-item ng-hide="hide_menu_home"  class="menu-home item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.home">
+					<i class="icon ion-android-home"></i> {{ "Home" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_find_a_tutor"  class="menu-find_a_tutor item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.find_a_tutor">
+					<i class="icon ion-man"></i> {{ "Find A tutor" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_institute"  class="menu-institute item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.institute">
+					<i class="icon ion-android-desktop"></i> {{ "Find Institute" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_find_students"  class="menu-find_students item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.find_students">
+					<i class="icon ion-person-stalker"></i> {{ "Find Students" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_course"  class="menu-course item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.course">
+					<i class="icon ion-ios-bookmarks"></i> {{ "Find Course" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_buy_course"  class="menu-buy_course item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.buy_course">
+					<i class="icon ion-compose"></i> {{ "Buy Course" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_about_us"  class="menu-about_us item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.about_us">
+					<i class="icon ion-ios-gear"></i> {{ "About Us" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_contact"  class="menu-contact item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.contact">
+					<i class="icon ion-android-call"></i> {{ "Contact Us" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_form_login"  class="menu-form_login item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.form_login">
+					<i class="icon ion-ios-personadd"></i> {{ "Login" | translate }}
+				</ion-item>
+				<ion-item ng-hide="hide_menu_form_user"  class="menu-form_user item-sidebar item item-icon-left text-left dark-ink" nav-clear="" menu-close="" ui-sref="findtutors.form_user">
+					<i class="icon ion-person"></i> {{ "Register" | translate }}
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

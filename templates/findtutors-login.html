@@ -1,0 +1,30 @@
+	<ion-view view-title=" Login" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-login" class="page-login">
+		<div class="padding">
+  
+ <img src="data/images/images/find.png" style="width:100px;height:100px;"class="center">
+ 
+<center><h5 style="color:white">Find Perfect Tutor For Quality Education</h5></center>
+  <div class="list">
+    <ion-md-input placeholder="User Name" highlight-color="assertive" type="text" ng-model="form_user.uname"></ion-md-input>
+    <ion-md-input placeholder="Password" highlight-color="assertive" type="password" ng-model="form_user.pwd"></ion-md-input>
+    
+  </div>
+   <div>
+   <span class="psw" style="color:red">Forgot <a href="#" style="color:red">password?</a></span>
+     </br>
+  </div>
+    </br>
+    <button ng-click="submitUser(form_user)" class="button button-full button-assertive ink">Sign In</button>
+      
+      <center><span id="msg" style="color:red; font-weight:bold;"></span></center>
+       <h4><p style="color:red">New Here?</p></h4>
+      <a ui-sref="findtutors.register" class="button button-full button-calm ink">Sign up here</a>
+</div>
+  
+
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

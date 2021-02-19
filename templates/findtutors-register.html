@@ -1,0 +1,47 @@
+	<ion-view view-title=" Register" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-register" class="page-register">
+		<div class="padding">
+
+  <img src="data/images/images/find.png" style="width:100px;height:100px;"class="center">
+  <div >
+   
+     <h4> <center>Best Tutor In Your Location</center></h4>
+    <center> <p style="color:white">Registre with Find A Tutor</p></center>
+    <hr>
+    
+<center> <p style="color:white">Register As</p></center>
+             <td>
+    			 <center><select>
+    			 		<option>Please select group</option>
+    			 		<option>Tutor</option>
+    			 		<option>Student</option>
+    			 		<option>Institute</option>
+    			 		<option>Others</option>
+                   </select></center>
+    			 </td>
+                 
+
+     <div class="list">
+    <ion-md-input placeholder="First Name" highlight-color="assertive" type="text" ng-model="form_user.firstname"></ion-md-input>
+    <ion-md-input placeholder="Last Name" highlight-color="assertive" type="text" ng-model="form_user.lastname"></ion-md-input>
+     <ion-md-input placeholder="email" highlight-color="assertive" type="email" ng-model="form_user.email"></ion-md-input>
+       <ion-md-input placeholder="password" highlight-color="assertive" type="password" ng-model="form_user.pwd"></ion-md-input>
+       <ion-md-input placeholder="confirm password" highlight-color="assertive" type="password" ng-model="form_user.cpwd"></ion-md-input>
+       <ion-md-input placeholder="state" highlight-color="assertive" type="text" ng-model="form_user.state"></ion-md-input>
+       
+  </div>
+   <hr>   
+    <p><b> By creating an account you agree to our</b><a href="#"> Terms & Condition.</a></p>
+     <a ui-sref="findtutors.login" class="button button-full button-assertive ink">Register</a>          
+                
+<p style="color:blue"> Already have an account? Click Sign in</p>
+<a ui-sref="findtutors.login" class="button button-full button-calm ink">Sign In Here</a>
+</div>
+
+</div>
+
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

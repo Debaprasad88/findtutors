@@ -1,0 +1,43 @@
+	<ion-view view-title=" Buy Course" hide-nav-bar="false" >
+		<!-- content -->
+		<ion-content delegate-handle="top"   id="page-buy_course" class="page-buy_course">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <form>
+      
+        <div class="row">
+         
+         <h3>Billing Buy Course</h3>
+     </div>
+      <img src="data/images/images/online.jpg" style="width:280px;height:170px;">
+       <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+             <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+             </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Card holder name">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="January">
+            <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2020">
+            
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+                 <label for="coursefee">Course Fee</label>
+                <input type="text" id="coursefee" name="coursefee" placeholder="1000">
+              
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr">All of the above payment regarding data are correct??
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+   
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
